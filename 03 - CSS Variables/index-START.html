@@ -26,6 +26,22 @@
       misc styles, nothing to do with CSS variables
     */
 
+    :root{
+      --base: #ffc600;
+      --blur: 10px;
+      --spacing: 10px;
+    }
+
+    img{
+      padding: var(--spacing);
+      filter: blur(var(--blur));
+      background: var(--base);
+    }
+
+    .hl{
+      color: var(--base);
+    }
+
     body {
       text-align: center;
       background: #193549;
@@ -43,9 +59,8 @@
       width: 100px;
     }
   </style>
-
-  <script>
-  </script>
+  
+  <script src="script.js"></script>
 
 </body>
 </html>
